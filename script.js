@@ -3,6 +3,9 @@ function firstWord(s) {
 	  if(s.length==0){
 		   return '';
 	  }
+	 if (!s.includes(' ')) {
+    return s;
+  }
 	 let arr=s.split(' ')
 	 return arr[0];
 }
